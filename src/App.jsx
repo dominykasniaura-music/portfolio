@@ -1,25 +1,48 @@
 import { useEffect, useMemo, useState } from 'react'
-import heroImage from './assets/dominykas-performing.jpg'
+
+import mainPortrait from './assets/main-page-profile-photo.jpg'
+import dominykasPerforming from './assets/dominykas-performing.jpg'
 import palaimaCover from './assets/palaima-2019.jpg'
 import bevietysteCover from './assets/bevietyste-2024.jpg'
 import civilizationCover from './assets/civilization-shmivilization-2025.jpg'
 import sokisCover from './assets/sokis-isuka-sviesa.png'
 
+import suicideoscopeProfile from './assets/suicideoscope-profile-photo.jpg'
+import suicideoscopeCover from './assets/suicideoscope-self-titled.jpg'
+import scopeCover from './assets/scope.jpg'
+
+import nneuraProfile from './assets/nneura-profile-photo.jpg'
+import uNeverKnewCover from './assets/u-never-knew.jpg'
+import mustHaveUCover from './assets/must-have-u.jpg'
+
+import transactionsProfile from './assets/transactions-profile-photo.jpg'
+import commonPitfallsCover from './assets/the-common-pitfalls-of-fraud-and-infatuation.jpg'
+import vilniusFullOfSpaceCover from './assets/vilnius-full-of-space.jpg'
+import labasRytasCover from './assets/labas-rytas.jpg'
+
+import estakadaProfile from './assets/estakada99-profile-photo.png'
+import neurasticCover from './assets/neurastic-soundscapes.jpg'
+import misadventuresCover from './assets/misadventures.jpg'
+
+const contactEmail = 'dominykas.niaura@gmail.com'
+const instagramUrl = 'https://www.instagram.com/dom.neura/'
+
 const projects = [
   {
     slug: 'dominykas-niaura',
+    navTitle: 'dominykas niaura',
     title: 'dominykas niaura',
     years: '2018–present',
     tags: ['ambient', 'field recordings', 'trip-hop', 'dub', 'experimental'],
     summary:
       'Electronic music artist drifting between field recordings, ambient, trip-hop, dub, and experimental music to create soundscapes that feel like entries from a personal journal.',
-    hero: heroImage,
+    hero: dominykasPerforming,
     intro: [
       'dominykas niaura is an electronic music artist whose work drifts between field recordings, ambient, trip-hop, dub, and experimental music to create soundscapes that feel like entries from a personal journal.',
       'The works include Palaima (2019), a compilation of early songs that laid the foundation for blending field recordings with ambient textures; Šokis įsuka šviesą (2021), a soundtrack for Ramūnas Liutkevičius’ debut poetry book; Bevietystė (2024), a concept album exploring memory, loneliness, meaning, and loss; and Civilization Shmivilization (2025), a half-hour guitar-and-effects improvisation.',
     ],
     links: [
-      { label: 'Instagram', href: 'https://www.instagram.com/dom.neura/' },
+      { label: 'Instagram', href: instagramUrl },
       { label: 'Bandcamp', href: 'https://dominykasniaura.bandcamp.com/' },
       { label: 'SoundCloud', href: 'https://soundcloud.com/niaura' },
       { label: 'Spotify', href: 'https://open.spotify.com/artist/61lGgboLfFJYSivn7p41zB?si=VMUU_TFsTFmcHOjg131i4Q' },
@@ -27,7 +50,7 @@ const projects = [
     ],
     works: [
       {
-        title: 'Civilization Shmivilization',
+        title: 'civilization shmivilization',
         year: '2025',
         type: 'single',
         image: civilizationCover,
@@ -41,7 +64,7 @@ const projects = [
         ],
       },
       {
-        title: 'Bevietystė',
+        title: 'bevietystė',
         year: '2024',
         type: 'album',
         image: bevietysteCover,
@@ -63,11 +86,10 @@ const projects = [
           'Poet Ramūnas Liutkevičius performs selected poems from his debut book with a soundtrack by dominykas niaura.',
         links: [
           { label: 'YouTube', href: 'https://www.youtube.com/watch?v=mnunMsMraj8' },
-          { label: 'Interview', href: 'https://literaturairmenas.lt/muzika/dominykas-niaura-muzika-suteikia-horizontalia-panorama-o-tekstas-vertikale' },
         ],
       },
       {
-        title: 'Palaima',
+        title: 'palaima',
         year: '2019',
         type: 'album',
         image: palaimaCover,
@@ -80,68 +102,259 @@ const projects = [
         ],
       },
     ],
+    media: [
+      {
+        title: 'Interview on Radio Vilnius',
+        meta: '2025',
+        href: 'https://radiovilnius.live/w-dominykas-niaura/',
+      },
+      {
+        title: 'Interview on Literatūra ir menas',
+        meta: '2022',
+        href: 'https://literaturairmenas.lt/muzika/dominykas-niaura-muzika-suteikia-horizontalia-panorama-o-tekstas-vertikale',
+      },
+      {
+        title: 'Vitalijus Gailius review on mic.lt',
+        meta: '2025',
+        href: 'https://www.mic.lt/lt/ivykiai/2025/11/03/2024-m-ii-ojo-pusmecio-lietuvisku-albumu-apzvalga-i-dalis/',
+      },
+      {
+        title: 'Emilija Visockaitė review in “6 ryškiausi mėnesio albumai”',
+        meta: '2024',
+        href: 'https://emilijaviso.substack.com/p/emilija-6-ryskiausi-menesio-albumai',
+      },
+    ],
   },
   {
     slug: 'suicideoscope',
+    navTitle: 'Suicideoscope',
     title: 'Suicideoscope',
     years: '2012–present',
-    tags: ['experimental electronic', 'cloud rap'],
-    summary: 'Placeholder page for future content.',
-    intro: ['Content coming soon.'],
-    links: [],
-    works: [],
+    tags: ['experimental electronic', 'cloud rap', 'lo-fi', 'outsider rap'],
+    summary:
+      'A chronic solo project designed to materialize dramas and reinvent itself every step of the way.',
+    hero: suicideoscopeProfile,
+    intro: [
+      'A chronic solo project designed to materialize dramas and reinvent itself every step of the way.',
+      'Striving for a genuine display of vulnerability since 2012.',
+    ],
+    links: [
+      { label: 'Bandcamp', href: 'https://suicideoscope.bandcamp.com/' },
+      { label: 'SoundCloud', href: 'https://soundcloud.com/suicideoscope' },
+      { label: 'YouTube', href: 'https://www.youtube.com/@suicideoscope' },
+      { label: 'Spotify', href: 'https://open.spotify.com/artist/0nYjLkegR4iLqWMiNHC1Xg' },
+      { label: 'Instagram', href: 'https://instagram.com/suicideoscope' },
+    ],
+    works: [
+      {
+        title: 'Scope',
+        year: '2022',
+        type: 'album',
+        image: scopeCover,
+        text:
+          'Genre tropes and tongue-in-cheek moments mixed with confessional storytelling, exploring societal distrust, mental health, substance abuse, misogyny, and other themes against understated dark arrangements.',
+        links: [
+          { label: 'Bandcamp', href: 'https://suicideoscope.bandcamp.com/album/scope' },
+        ],
+      },
+      {
+        title: 'Suicideoscope',
+        year: '2017',
+        type: 'album',
+        image: suicideoscopeCover,
+        text:
+          'A debut self-titled album that interweaves psychedelics and sedatives into a long-form séance of self-analysis, moving through omnipotence, impotence, identity issues, hedonism, anxiety, and self-judgment.',
+        links: [
+          { label: 'Bandcamp', href: 'https://suicideoscope.bandcamp.com/album/suicideoscope' },
+        ],
+      },
+    ],
+    media: [
+      {
+        title: 'Interview on ore.lt',
+        meta: '2016',
+        href: 'https://www.ore.lt/2016/05/suicideoscope-kuryba-nepataikauja-klausytojui',
+      },
+      {
+        title: 'Interview on ore.lt',
+        meta: '2017',
+        href: 'https://www.ore.lt/2017/12/suicideoscope-lo-fi-yra-tiesos-ieskojimas',
+      },
+    ],
   },
   {
     slug: 'nneura',
+    navTitle: 'Nneura',
     title: 'Nneura',
     years: '2016–present',
-    tags: ['house', 'dub techno', 'UKG', 'dubstep', 'jungle'],
-    summary: 'Placeholder page for future content.',
-    intro: ['Content coming soon.'],
-    links: [],
-    works: [],
+    tags: ['deep house', 'dub techno', 'leftfield house', 'leftfield techno', 'lo-fi house'],
+    summary: 'outsider inside and out',
+    hero: nneuraProfile,
+    intro: [
+      'Nneura explores house and techno from a more intimate angle, balancing club momentum with melancholy, haze, and soft abrasion.',
+      'The project moves through deep house, dub techno, lo-fi house, and leftfield textures while keeping a personal outsider sensibility.',
+    ],
+    links: [
+      { label: 'Bandcamp', href: 'https://nneura.bandcamp.com/' },
+      { label: 'SoundCloud', href: 'https://soundcloud.com/nneura' },
+    ],
+    works: [
+      {
+        title: 'U Never Knew',
+        year: '2022',
+        type: 'EP',
+        image: uNeverKnewCover,
+        text:
+          'A release from Nneura’s dubby and leftfield club world, moving through deep house, lo-fi house, and subtly blurred techno textures.',
+        links: [
+          { label: 'Bandcamp', href: 'https://nneura.bandcamp.com/album/u-never-knew' },
+        ],
+      },
+      {
+        title: 'Must Have U',
+        year: '2019',
+        type: 'EP',
+        image: mustHaveUCover,
+        text:
+          'An earlier Nneura release rooted in outsider house, pairing groove and atmosphere with a stripped-back emotional undertow.',
+        links: [
+          { label: 'Bandcamp', href: 'https://nneura.bandcamp.com/album/must-have-u' },
+        ],
+      },
+    ],
+    media: [],
   },
   {
     slug: 'transactions',
+    navTitle: 'Transactions',
     title: 'Transactions',
     years: '2014, 2019–2024',
-    tags: ['post-punk', 'indie rock'],
-    summary: 'Placeholder page for future content.',
-    intro: ['Content coming soon.'],
-    links: [],
-    works: [],
+    tags: ['post-punk', 'indie rock', 'noise rock', 'emo'],
+    summary: 'Four-piece indie post-punk that sounds like no fun.',
+    hero: transactionsProfile,
+    intro: [
+      'Transactions is a four-piece indie post-punk band from Vilnius. In this project, Dominykas is the songwriter, vocalist, and guitarist.',
+      'The music moves through post-punk, indie rock, noise rock, and emo while keeping a tense, emotionally direct, and slightly warped melodic core.',
+    ],
+    links: [
+      { label: 'Bandcamp', href: 'https://transactions.bandcamp.com/music' },
+      { label: 'Instagram', href: 'https://instagram.com/transactionsband' },
+      { label: 'YouTube', href: 'https://www.youtube.com/@transactions9229' },
+      { label: 'Spotify', href: 'https://open.spotify.com/artist/70qq6v3uFhmJ8Qk3T9eHj5' },
+    ],
+    works: [
+      {
+        title: 'The Common Pitfalls of Fraud and Infatuation',
+        year: '2022',
+        type: 'album',
+        image: commonPitfallsCover,
+        text:
+          'A full-length release from the band’s indie post-punk world, built around frayed melody, abrasion, and tense forward motion.',
+        links: [
+          { label: 'Bandcamp', href: 'https://transactions.bandcamp.com/album/the-common-pitfalls-of-fraud-and-infatuation' },
+        ],
+      },
+      {
+        title: 'Vilnius Full of Space',
+        year: '2020',
+        type: 'EP',
+        image: vilniusFullOfSpaceCover,
+        text:
+          'An EP-era snapshot of the band’s sharper early tension, carrying the same no-frills post-punk identity in a more compact form.',
+        links: [
+          { label: 'Bandcamp', href: 'https://transactions.bandcamp.com/album/vilnius-full-of-space' },
+        ],
+      },
+      {
+        title: 'Labas Rytas',
+        year: '2020',
+        type: 'single',
+        image: labasRytasCover,
+        text:
+          'A standalone release from the same period, sitting close to the band’s early sound and surrounding material.',
+        links: [
+          { label: 'Bandcamp', href: 'https://transactions.bandcamp.com/album/labas-rytas' },
+        ],
+      },
+    ],
+    media: [
+      {
+        title: 'Interview on Suru.lt show at Start FM',
+        meta: '2022',
+        href: 'https://www.suru.lt/suru-start-fm-s05e15-transactions/?fbclid=IwAR1pv_AlAAie2OBv4tRIMFVQ-91L9BqBds9ev-nN9aAgoCXc3wGiSXZA7M4',
+      },
+    ],
   },
   {
     slug: 'estakada99',
+    navTitle: 'estakada99',
     title: 'estakada99',
     years: '2025–present',
-    tags: ['independent online radio station'],
-    summary: 'Placeholder page for future content.',
-    intro: ['Content coming soon.'],
-    links: [],
-    works: [],
+    tags: ['independent online radio station', 'Vilnius', 'community radio'],
+    summary:
+      'Independent online radio station established in Vilnius in 2025, broadcasting from studios, homes, and venues across the city and beyond.',
+    hero: estakadaProfile,
+    intro: [
+      'estakada99 is an independent online radio station established in Vilnius in 2025, broadcasting from studios, homes, and venues across the city and beyond.',
+      'Dominykas is a co-founder of the station and makes two shows there that move between live process, conversation, and atmosphere.',
+    ],
+    links: [
+      { label: 'Website', href: 'https://www.e99.live' },
+      { label: 'Email', href: 'mailto:neura@e99.live' },
+      { label: 'Instagram', href: 'https://www.instagram.com/estakada99/' },
+    ],
+    works: [
+      {
+        title: 'NEURASTIC SOUNDSCAPES OR HOW TO MAKE AMBIENT',
+        year: '2025–present',
+        type: 'radio show',
+        image: neurasticCover,
+        text:
+          'On Tuesday evenings, Dominykas dedicates one hour to broadcast a live hardware jam from his home and talk through the process of making music as it happens.',
+        links: [
+          { label: 'SoundCloud', href: 'https://soundcloud.com/estakada99/sets/neurastic-soundscapes-or-how' },
+        ],
+      },
+      {
+        title: 'MISADVENTURES',
+        year: '2025–present',
+        type: 'radio show',
+        image: misadventuresCover,
+        text:
+          'An indie film of a radio show – mundane conversations about life’s big and small questions, recorded while walking outdoors, with music to make it all a bit more bearable.',
+        links: [
+          { label: 'SoundCloud', href: 'https://soundcloud.com/estakada99/sets/misadventures' },
+        ],
+      },
+    ],
+    media: [],
   },
 ]
 
 const seo = {
-  title: 'Dominykas Niaura — artist, composer, producer, sound artist from Vilnius',
+  title: 'Dominykas Niaura audio work portfolio',
   description:
-    'Portfolio website for Dominykas Niaura, an artist from Vilnius working across ambient, field recordings, experimental electronics, poetry soundtracks, and radio.',
+    'Portfolio website for Dominykas Niaura, bringing together projects, releases, radio work, and links in one place.',
 }
 
-function SectionTitle({ eyebrow, title, subtitle }) {
+function SectionTitle({ title }) {
   return (
     <div className="section-title">
-      {eyebrow ? <div className="section-eyebrow">{eyebrow}</div> : null}
       <h2>{title}</h2>
-      {subtitle ? <p>{subtitle}</p> : null}
     </div>
   )
 }
 
 function LinkPill({ label, href }) {
+  const external = !href.startsWith('mailto:')
+
   return (
-    <a href={href} target="_blank" rel="noreferrer" className="link-pill">
+    <a
+      href={href}
+      target={external ? '_blank' : undefined}
+      rel={external ? 'noreferrer' : undefined}
+      className="link-pill"
+    >
       {label}
     </a>
   )
@@ -155,7 +368,6 @@ function ProjectCard({ project, onOpen }) {
           <h3>{project.title}</h3>
           <p>{project.years}</p>
         </div>
-        <span>Open</span>
       </div>
       <div className="project-card-body">
         <p>{project.summary}</p>
@@ -193,50 +405,40 @@ function WorkCard({ work }) {
   )
 }
 
+function MediaCard({ item }) {
+  return (
+    <a href={item.href} target="_blank" rel="noreferrer" className="media-card">
+      <div className="media-meta">{item.meta}</div>
+      <h4>{item.title}</h4>
+    </a>
+  )
+}
+
 function HomePage({ onOpenProject }) {
   return (
     <>
       <section className="hero-grid">
-        <div>
-          <div className="hero-eyebrow">Portfolio · Vilnius, Lithuania</div>
+        <div className="hero-copy-col">
           <h1>Dominykas Niaura</h1>
           <p className="hero-text">
             Composer, producer, sound artist, performer, and radio show maker from Vilnius. This website gathers projects, releases, links, and context in one place.
           </p>
+          <div className="hero-spacer" />
           <div className="pill-row">
-            <LinkPill label="Email" href="mailto:dominykas.niaura@gmail.com" />
-            <LinkPill label="Instagram" href="https://www.instagram.com/dom.neura/" />
-            <LinkPill label="Bandcamp" href="https://dominykasniaura.bandcamp.com/" />
-            <LinkPill label="SoundCloud" href="https://soundcloud.com/niaura" />
+            <LinkPill label="Email" href={`mailto:${contactEmail}`} />
           </div>
         </div>
-        <div className="hero-image-shell">
-          <img src={heroImage} alt="Dominykas Niaura performing" className="hero-image" />
+
+        <div className="hero-portrait-shell">
+          <img src={mainPortrait} alt="Dominykas Niaura portrait" className="hero-portrait" />
         </div>
       </section>
 
       <section className="content-section">
-        <SectionTitle
-          eyebrow="Projects"
-          title="A one-stop place for distinct bodies of work"
-          subtitle="The structure is intentionally simple: choose a project, then move through releases, links, and context without friction."
-        />
+        <SectionTitle title="Projects" />
         <div className="projects-grid">
           {projects.map((project) => (
             <ProjectCard key={project.slug} project={project} onOpen={onOpenProject} />
-          ))}
-        </div>
-      </section>
-
-      <section className="content-section bordered-section">
-        <SectionTitle
-          eyebrow="Focus"
-          title="Current page in development"
-          subtitle="Version one centers on the dominykas niaura page first. The other project pages are already wired in and can be filled next."
-        />
-        <div className="art-grid">
-          {[palaimaCover, bevietysteCover, civilizationCover, sokisCover].map((src) => (
-            <img key={src} src={src} alt="Project artwork" className="art-grid-image" />
           ))}
         </div>
       </section>
@@ -244,7 +446,22 @@ function HomePage({ onOpenProject }) {
   )
 }
 
-function ProjectPage({ project, onBack, onOpenProject }) {
+function ContactPage() {
+  return (
+    <section className="contact-page">
+      <h1 className="project-title">Contact</h1>
+      <p className="hero-text contact-text">
+        For collaborations, bookings, commissions, or questions, get in touch here.
+      </p>
+      <div className="pill-row">
+        <LinkPill label="Email" href={`mailto:${contactEmail}`} />
+        <LinkPill label="Instagram" href={instagramUrl} />
+      </div>
+    </section>
+  )
+}
+
+function ProjectPage({ project, onBack, onOpenProject, onOpenContact }) {
   return (
     <div className="project-layout">
       <aside className="sidebar-shell">
@@ -263,6 +480,9 @@ function ProjectPage({ project, onBack, onOpenProject }) {
                 {entry.title}
               </button>
             ))}
+            <button onClick={onOpenContact} className="sidebar-link">
+              Contact
+            </button>
           </div>
         </div>
       </aside>
@@ -301,15 +521,7 @@ function ProjectPage({ project, onBack, onOpenProject }) {
         </section>
 
         <section className="content-section">
-          <SectionTitle
-            eyebrow="Selected works"
-            title={project.works.length ? 'Releases and related work' : 'More coming soon'}
-            subtitle={
-              project.works.length
-                ? 'A first set of releases and related links. Later we can expand each work into its own dedicated view or embed media directly.'
-                : 'This page is already part of the structure and can be filled in next.'
-            }
-          />
+          <SectionTitle title="Releases" />
           <div className="works-list">
             {project.works.length ? (
               project.works.map((work) => <WorkCard key={work.title} work={work} />)
@@ -319,15 +531,16 @@ function ProjectPage({ project, onBack, onOpenProject }) {
           </div>
         </section>
 
-        <section className="contact-banner">
-          <div>
-            <div className="section-eyebrow accent">Contact</div>
-            <p>For collaborations, bookings, or questions, write to dominykas.niaura@gmail.com</p>
-          </div>
-          <a href="mailto:dominykas.niaura@gmail.com" className="link-pill strong-pill">
-            Write an email
-          </a>
-        </section>
+        {project.media?.length ? (
+          <section className="content-section bordered-section media-section">
+            <SectionTitle title="Media" />
+            <div className="media-grid">
+              {project.media.map((item) => (
+                <MediaCard key={item.href} item={item} />
+              ))}
+            </div>
+          </section>
+        ) : null}
       </div>
     </div>
   )
@@ -346,6 +559,16 @@ export default function App() {
 
     const descriptionTag = document.querySelector('meta[name="description"]')
     if (descriptionTag) descriptionTag.setAttribute('content', seo.description)
+
+    const ogTitle = document.querySelector('meta[property="og:title"]')
+    const ogDescription = document.querySelector('meta[property="og:description"]')
+    const twitterTitle = document.querySelector('meta[name="twitter:title"]')
+    const twitterDescription = document.querySelector('meta[name="twitter:description"]')
+
+    if (ogTitle) ogTitle.setAttribute('content', seo.title)
+    if (ogDescription) ogDescription.setAttribute('content', seo.description)
+    if (twitterTitle) twitterTitle.setAttribute('content', seo.title)
+    if (twitterDescription) twitterDescription.setAttribute('content', seo.description)
   }, [])
 
   return (
@@ -354,23 +577,31 @@ export default function App() {
         <header className="site-header">
           <button onClick={() => setActivePage('home')} className="brand-button">
             <div className="brand-name">Dominykas Niaura</div>
-            <div className="brand-subtitle">Artist portfolio</div>
+            <div className="brand-subtitle">Audio work portfolio</div>
           </button>
+
           <nav className="top-nav">
             <button onClick={() => setActivePage('home')}>Home</button>
-            <button onClick={() => setActivePage('dominykas-niaura')}>dominykas niaura</button>
-            <a href="mailto:dominykas.niaura@gmail.com">Contact</a>
+            {projects.map((project) => (
+              <button key={project.slug} onClick={() => setActivePage(project.slug)}>
+                {project.navTitle}
+              </button>
+            ))}
+            <button onClick={() => setActivePage('contact')}>Contact</button>
           </nav>
         </header>
 
         <main>
           {activePage === 'home' ? (
             <HomePage onOpenProject={setActivePage} />
+          ) : activePage === 'contact' ? (
+            <ContactPage />
           ) : (
             <ProjectPage
               project={currentProject}
               onBack={() => setActivePage('home')}
               onOpenProject={setActivePage}
+              onOpenContact={() => setActivePage('contact')}
             />
           )}
         </main>
@@ -378,16 +609,10 @@ export default function App() {
         <footer className="site-footer">
           <p>Dominykas Niaura · Vilnius, Lithuania</p>
           <div className="footer-links">
-            <a href="https://www.instagram.com/dom.neura/" target="_blank" rel="noreferrer">
+            <a href={instagramUrl} target="_blank" rel="noreferrer">
               Instagram
             </a>
-            <a href="https://dominykasniaura.bandcamp.com/" target="_blank" rel="noreferrer">
-              Bandcamp
-            </a>
-            <a href="https://soundcloud.com/niaura" target="_blank" rel="noreferrer">
-              SoundCloud
-            </a>
-            <a href="mailto:dominykas.niaura@gmail.com">Email</a>
+            <a href={`mailto:${contactEmail}`}>Email</a>
           </div>
         </footer>
       </div>

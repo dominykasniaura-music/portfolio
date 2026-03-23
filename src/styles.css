@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', 'URW Palladio L', Georgia, serif;
+  font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   color: #ece8de;
   background: #090b0a;
   font-synthesis: none;
@@ -88,12 +88,13 @@ img {
 }
 
 .brand-name {
-  font-size: clamp(1.3rem, 1.9vw, 1.7rem);
+  font-size: clamp(1.2rem, 1.7vw, 1.55rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .brand-subtitle,
-.section-eyebrow,
-.hero-eyebrow {
+.section-eyebrow {
   margin-top: 0.35rem;
   font-size: 0.72rem;
   text-transform: uppercase;
@@ -101,7 +102,6 @@ img {
   color: var(--muted);
 }
 
-.hero-eyebrow,
 .section-eyebrow.accent {
   color: var(--accent);
 }
@@ -110,18 +110,16 @@ img {
 .footer-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.1rem 1.4rem;
+  gap: 1rem 1.2rem;
 }
 
 .top-nav button,
-.top-nav a,
 .footer-links a {
   color: var(--muted);
   transition: color 180ms ease;
 }
 
 .top-nav button:hover,
-.top-nav a:hover,
 .footer-links a:hover,
 .back-button:hover,
 .sidebar-link:hover {
@@ -131,56 +129,67 @@ img {
 .hero-grid {
   display: grid;
   gap: 2rem;
-  grid-template-columns: 1.25fr 0.95fr;
-  padding-bottom: 4rem;
+  grid-template-columns: 1.25fr 300px;
+  align-items: start;
+  padding-bottom: 3.2rem;
   border-bottom: 1px solid var(--line);
+}
+
+.hero-copy-col {
+  max-width: 46rem;
 }
 
 .hero-grid h1,
 .project-title {
   margin: 0;
   line-height: 0.96;
-  font-size: clamp(3rem, 8vw, 5.5rem);
-  font-weight: 500;
+  font-size: clamp(3rem, 8vw, 5.4rem);
+  font-weight: 600;
+  letter-spacing: -0.045em;
 }
 
 .hero-text {
   margin: 1.5rem 0 0;
   max-width: 40rem;
-  font-size: clamp(1.08rem, 2vw, 1.3rem);
-  line-height: 1.6;
+  font-size: clamp(1.05rem, 2vw, 1.22rem);
+  line-height: 1.7;
   color: var(--muted);
 }
 
-.hero-image-shell,
+.hero-spacer {
+  height: 1.3rem;
+}
+
+.hero-portrait-shell,
 .sidebar-card,
 .project-card,
 .work-card,
-.contact-banner,
-.coming-soon {
+.coming-soon,
+.media-card {
   border: 1px solid var(--line);
   background: var(--panel-soft);
   backdrop-filter: blur(6px);
 }
 
-.hero-image-shell {
-  border-radius: 2rem;
+.hero-portrait-shell {
+  width: 100%;
+  max-width: 300px;
+  justify-self: end;
+  border-radius: 1.8rem;
   background: linear-gradient(180deg, rgba(25, 57, 51, 0.75), rgba(10, 12, 11, 1));
-  padding: 1.25rem;
+  padding: 0.9rem;
 }
 
-.hero-image,
+.hero-portrait,
 .project-main-image,
-.art-grid-image,
 .work-image {
   object-fit: cover;
-  border-radius: 1.5rem;
+  border-radius: 1.3rem;
 }
 
-.hero-image {
+.hero-portrait {
   width: 100%;
-  min-height: 360px;
-  height: 100%;
+  aspect-ratio: 3 / 4;
   filter: grayscale(1);
 }
 
@@ -195,26 +204,19 @@ img {
 }
 
 .section-title {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .section-title h2 {
   margin: 0;
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  font-weight: 500;
+  font-size: clamp(1.85rem, 4vw, 3rem);
+  font-weight: 600;
   line-height: 1.08;
-}
-
-.section-title p {
-  margin: 1rem 0 0;
-  max-width: 42rem;
-  color: var(--muted);
-  line-height: 1.7;
-  font-size: 1.06rem;
+  letter-spacing: -0.03em;
 }
 
 .projects-grid,
-.art-grid {
+.media-grid {
   display: grid;
   gap: 1.25rem;
 }
@@ -223,8 +225,8 @@ img {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.art-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.media-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .project-card {
@@ -244,22 +246,22 @@ img {
 }
 
 .project-card-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
   margin-bottom: 1.25rem;
 }
 
 .project-card-top h3,
-.work-header h4 {
+.work-header h4,
+.media-card h4 {
   margin: 0;
-  font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: -0.03em;
 }
 
-.project-card-top p,
-.project-card-top span {
+.project-card-top h3 {
+  font-size: 1.7rem;
+}
+
+.project-card-top p {
   margin: 0.45rem 0 0;
   color: var(--muted);
   font-size: 0.95rem;
@@ -268,8 +270,8 @@ img {
 .project-card-body p,
 .work-text,
 .project-copy p,
-.contact-banner p,
-.coming-soon {
+.coming-soon,
+.contact-text {
   color: var(--muted);
   line-height: 1.75;
 }
@@ -292,7 +294,7 @@ img {
 .tag,
 .work-meta {
   padding: 0.46rem 0.8rem;
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--muted);
@@ -314,10 +316,6 @@ img {
   color: var(--text);
   border-color: #2f5a51;
   background: rgba(25, 57, 51, 0.18);
-}
-
-.strong-pill {
-  padding-inline: 1.2rem;
 }
 
 .project-layout {
@@ -364,6 +362,10 @@ img {
   border-bottom: 1px solid var(--line);
 }
 
+.project-tags {
+  margin-top: 1rem;
+}
+
 .project-intro-grid {
   display: grid;
   gap: 2rem;
@@ -381,7 +383,7 @@ img {
 }
 
 .project-copy {
-  font-size: 1.08rem;
+  font-size: 1.04rem;
 }
 
 .project-copy p {
@@ -419,19 +421,38 @@ img {
   margin-bottom: 1rem;
 }
 
-.contact-banner {
-  margin-top: 3rem;
-  padding-top: 2.5rem;
-  border-radius: 0;
-  border-left: 0;
-  border-right: 0;
-  border-bottom: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1.5rem;
-  background: transparent;
-  backdrop-filter: none;
+.media-card {
+  display: block;
+  padding: 1.25rem;
+  border-radius: 1.4rem;
+  transition:
+    border-color 180ms ease,
+    background 180ms ease,
+    transform 180ms ease;
+}
+
+.media-card:hover {
+  border-color: #2f5a51;
+  background: #0e1211;
+  transform: translateY(-2px);
+}
+
+.media-meta {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--accent);
+  margin-bottom: 0.8rem;
+}
+
+.media-card h4 {
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+
+.contact-page {
+  max-width: 44rem;
+  padding-bottom: 2rem;
 }
 
 .coming-soon {
@@ -456,8 +477,9 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .art-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .hero-portrait-shell {
+    justify-self: start;
+    max-width: 280px;
   }
 
   .sidebar-shell {
@@ -472,25 +494,21 @@ img {
   }
 
   .site-header,
-  .site-footer,
-  .contact-banner {
+  .site-footer {
     flex-direction: column;
     align-items: flex-start;
   }
 
   .projects-grid,
-  .art-grid {
+  .media-grid {
     grid-template-columns: 1fr;
-  }
-
-  .hero-grid {
-    padding-bottom: 3rem;
   }
 
   .project-card,
   .work-card,
   .sidebar-card,
-  .hero-image-shell {
+  .hero-portrait-shell,
+  .media-card {
     border-radius: 1.45rem;
   }
 
