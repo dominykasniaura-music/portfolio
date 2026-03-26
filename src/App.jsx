@@ -137,7 +137,7 @@ const projects = [
     intro: [
       'Suicideoscope is a Vilnius-based postmodern experimental electronics project. Over a decade of activity, this project’s music has merged various influences ranging from shoegaze and psychedelic folk to post-industrial electronics and cloud rap, while its live performances are known for their emotional intensity.',
       'Early works were often compared to Have a Nice Life, and the project later began interpreting popular genres through an alternative lens.',
-      'Suicideoscope debuted in 2017 with a self-titled cassette album and a performance at the Devilstone festival. The 2022 follow-up, Scope, marked a new direction while maintaining the project's signature melancholy, lo-fi aesthetic, and exploration of mortality.',
+      'Suicideoscope debuted in 2017 with a self-titled cassette album and a performance at the Devilstone festival. The 2022 follow-up, Scope, marked a new direction while maintaining the project’s signature melancholy, lo-fi aesthetic, and exploration of mortality.',
     ],
     links: [
       { label: 'Bandcamp', href: 'https://suicideoscope.bandcamp.com/' },
@@ -259,7 +259,7 @@ const projects = [
         type: 'album',
         image: commonPitfallsCover,
         text:
-          'The first full-length release of the band's indie post-punk flavour – their most intricate and subtle work with a profoundly atmospheric and emotionally resonant weight.',
+          'The first full-length release of the band’s indie post-punk flavour – their most intricate and subtle work with a profoundly atmospheric and emotionally resonant weight.',
         links: [
           { label: 'Bandcamp', href: 'https://transactions.bandcamp.com/album/the-common-pitfalls-of-fraud-and-infatuation' },
           { label: 'YouTube', href: 'https://www.youtube.com/watch?v=82l4djD8Irg&list=PLz1j8FH22pWe__7BNV-RvM93n15vbPA2O' },
