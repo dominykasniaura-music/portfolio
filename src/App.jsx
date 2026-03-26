@@ -35,11 +35,11 @@ const projects = [
     years: '2018–present',
     tags: ['ambient', 'field recordings', 'trip-hop', 'dub', 'experimental'],
     summary:
-      'Electronic music artist drifting between field recordings, ambient, trip-hop, dub, and experimental music to create soundscapes that feel like entries from a personal journal.',
+      'Electronic music project drifting between ambient, field recordings, trip-hop, dub, and experimental music to create soundscapes that feel like entries from a personal journal.',
     hero: dominykasPerforming,
     intro: [
       'dominykas niaura is an electronic music artist whose work drifts between field recordings, ambient, trip-hop, dub, and experimental music to create soundscapes that feel like entries from a personal journal.',
-      'The works include Palaima (2019), a compilation of early songs that laid the foundation for blending field recordings with ambient textures; Šokis įsuka šviesą (2021), a soundtrack for Ramūnas Liutkevičius’ debut poetry book; Bevietystė (2024), a concept album exploring memory, loneliness, meaning, and loss; and Civilization Shmivilization (2025), a half-hour guitar-and-effects improvisation.',
+      'The works include palaima (2019), a compilation of early songs that laid the foundation for blending field recordings with ambient textures; Šokis įsuka šviesą (2021), a soundtrack for Ramūnas Liutkevičius’ debut poetry book; bevietystė (2024), a concept album exploring memory, loneliness, meaning, and loss; and civilization shmivilization (2025), a half-hour guitar-and-effects improvisation.',
     ],
     links: [
       { label: 'Instagram', href: instagramUrl },
@@ -119,7 +119,7 @@ const projects = [
         href: 'https://www.mic.lt/lt/ivykiai/2025/11/03/2024-m-ii-ojo-pusmecio-lietuvisku-albumu-apzvalga-i-dalis/',
       },
       {
-        title: 'Emilija Visockaitė review in “6 ryškiausi mėnesio albumai”',
+        title: 'Emilija Visockaitė review on her Substack',
         meta: '2024',
         href: 'https://emilijaviso.substack.com/p/emilija-6-ryskiausi-menesio-albumai',
       },
@@ -130,13 +130,14 @@ const projects = [
     navTitle: 'Suicideoscope',
     title: 'Suicideoscope',
     years: '2012–present',
-    tags: ['experimental electronic', 'cloud rap', 'lo-fi', 'outsider rap'],
+    tags: ['experimental electronic', 'cloud rap', 'lo-fi', 'shoegaze', 'post-punk'],
     summary:
-      'A chronic solo project designed to materialize dramas and reinvent itself every step of the way.',
+      'An experimental electronic project designed to materialize dramas and reinvent itself every step of the way.',
     hero: suicideoscopeProfile,
     intro: [
-      'A chronic solo project designed to materialize dramas and reinvent itself every step of the way.',
-      'Striving for a genuine display of vulnerability since 2012.',
+      'Suicideoscope is a Vilnius-based postmodern experimental electronics project. Over a decade of activity, this project’s music has merged various influences ranging from shoegaze and psychedelic folk to post-industrial electronics and cloud rap, while its live performances are known for their emotional intensity.',
+      'Early works were often compared to Have a Nice Life, and the project later began interpreting popular genres through an alternative lens.',
+      'Suicideoscope debuted in 2017 with a self-titled cassette album and a performance at the Devilstone festival. The 2022 follow-up, Scope, marked a new direction while maintaining the project's signature melancholy, lo-fi aesthetic, and exploration of mortality.',
     ],
     links: [
       { label: 'Bandcamp', href: 'https://suicideoscope.bandcamp.com/' },
@@ -144,6 +145,7 @@ const projects = [
       { label: 'YouTube', href: 'https://www.youtube.com/@suicideoscope' },
       { label: 'Spotify', href: 'https://open.spotify.com/artist/0nYjLkegR4iLqWMiNHC1Xg' },
       { label: 'Instagram', href: 'https://instagram.com/suicideoscope' },
+      { label: 'Facebook', href: 'https://www.facebook.com/Suicideoscope/' },
     ],
     works: [
       {
@@ -152,9 +154,12 @@ const projects = [
         type: 'album',
         image: scopeCover,
         text:
-          'Genre tropes and tongue-in-cheek moments mixed with confessional storytelling, exploring societal distrust, mental health, substance abuse, misogyny, and other themes against understated dark arrangements.',
+          'Modern hip-hop genre tropes and tongue-in-cheek moments mixed with confessional storytelling, exploring mental health, substance abuse, misogyny, and other themes against dark arrangements.',
         links: [
           { label: 'Bandcamp', href: 'https://suicideoscope.bandcamp.com/album/scope' },
+          { label: 'SoundCloud', href: 'https://soundcloud.com/suicideoscope/sets/scope' },
+          { label: 'Spotify', href: 'https://open.spotify.com/album/1CskY8GvQsTwBc2f8jpBmS?si=Hpi8Cs-oS3aTaXTn5UZo7Q' },
+          { label: 'YouTube', href: 'https://www.youtube.com/watch?v=CRDT4tlmzmA&list=PL22lNEvglP1XRA9otCKilXxYk9r174try' },
         ],
       },
       {
@@ -163,9 +168,12 @@ const projects = [
         type: 'album',
         image: suicideoscopeCover,
         text:
-          'A debut self-titled album that interweaves psychedelics and sedatives into a long-form séance of self-analysis, moving through omnipotence, impotence, identity issues, hedonism, anxiety, and self-judgment.',
+          'An eclectic mix of guitar and electronic music on the debut self-titled album that interweaves psychedelics and sedatives into a long-form séance of self-analysis, moving through omnipotence, impotence, identity issues, hedonism, anxiety, and self-judgment.',
         links: [
           { label: 'Bandcamp', href: 'https://suicideoscope.bandcamp.com/album/suicideoscope' },
+          { label: 'SoundCloud', href: 'https://soundcloud.com/suicideoscope/sets/suicideoscope' },
+          { label: 'Spotify', href: 'https://open.spotify.com/album/0KDnLTnyaYdPGUKZN9gRWd?si=srayMNgFSk6tMZgqCDehng' },
+          { label: 'YouTube', href: 'https://www.youtube.com/watch?v=VEAWqXu-ppQ' },
         ],
       },
     ],
@@ -187,12 +195,12 @@ const projects = [
     navTitle: 'Nneura',
     title: 'Nneura',
     years: '2016–present',
-    tags: ['deep house', 'dub techno', 'leftfield house', 'leftfield techno', 'lo-fi house'],
-    summary: 'outsider inside and out',
+    tags: ['deep house', 'dub techno', 'lo-fi house', 'leftfield'],
+    summary: 'A dance music producer and DJ moniker for moody ',
     hero: nneuraProfile,
     intro: [
       'Nneura explores house and techno from a more intimate angle, balancing club momentum with melancholy, haze, and soft abrasion.',
-      'The project moves through deep house, dub techno, lo-fi house, and leftfield textures while keeping a personal outsider sensibility.',
+      'This project moves through deep house, dub techno, lo-fi house, and leftfield textures while keeping a personal outsider sensibility.',
     ],
     links: [
       { label: 'Bandcamp', href: 'https://nneura.bandcamp.com/' },
@@ -205,9 +213,10 @@ const projects = [
         type: 'EP',
         image: uNeverKnewCover,
         text:
-          'A release from Nneura’s dubby and leftfield club world, moving through deep house, lo-fi house, and subtly blurred techno textures.',
+          'A varied release of leftfield and dubby club music, moving through outsider house, deep house, lo-fi house, and subtly blurred techno textures.',
         links: [
           { label: 'Bandcamp', href: 'https://nneura.bandcamp.com/album/u-never-knew' },
+          { label: 'SoundCloud', href: 'https://soundcloud.com/nneura/sets/u-never-knew' },
         ],
       },
       {
@@ -216,9 +225,10 @@ const projects = [
         type: 'EP',
         image: mustHaveUCover,
         text:
-          'An earlier Nneura release rooted in outsider house, pairing groove and atmosphere with a stripped-back emotional undertow.',
+          'Breakout Nneura release pairing a classic outsider house track with a mellow dub techno track.',
         links: [
           { label: 'Bandcamp', href: 'https://nneura.bandcamp.com/album/must-have-u' },
+          { label: 'YouTube', href: 'https://www.youtube.com/watch?v=YaBsDYdoczE' },
         ],
       },
     ],
@@ -229,8 +239,8 @@ const projects = [
     navTitle: 'Transactions',
     title: 'Transactions',
     years: '2014, 2019–2024',
-    tags: ['post-punk', 'indie rock', 'noise rock', 'emo'],
-    summary: 'Four-piece indie post-punk that sounds like no fun.',
+    tags: ['post-punk', 'indie rock', 'post-hardcore', 'emo'],
+    summary: 'A four-piece indie post-punk band.',
     hero: transactionsProfile,
     intro: [
       'Transactions is a four-piece indie post-punk band from Vilnius. In this project, Dominykas is the songwriter, vocalist, and guitarist.',
@@ -249,9 +259,11 @@ const projects = [
         type: 'album',
         image: commonPitfallsCover,
         text:
-          'A full-length release from the band’s indie post-punk world, built around frayed melody, abrasion, and tense forward motion.',
+          'The first full-length release of the band's indie post-punk flavour – their most intricate and subtle work with a profoundly atmospheric and emotionally resonant weight.',
         links: [
           { label: 'Bandcamp', href: 'https://transactions.bandcamp.com/album/the-common-pitfalls-of-fraud-and-infatuation' },
+          { label: 'YouTube', href: 'https://www.youtube.com/watch?v=82l4djD8Irg&list=PLz1j8FH22pWe__7BNV-RvM93n15vbPA2O' },
+          { label: 'Spotify', href: 'https://open.spotify.com/album/1mroHd9z4EL3mnMWqMFy1T?si=M0-jFMnxTbSzjxt2hiEp9Q' },
         ],
       },
       {
@@ -260,9 +272,11 @@ const projects = [
         type: 'EP',
         image: vilniusFullOfSpaceCover,
         text:
-          'An EP-era snapshot of the band’s sharper early tension, carrying the same no-frills post-punk identity in a more compact form.',
+          'An EP born from the pandemic era, documenting the band’s sharper, formative songs through a lens of post-hardcore intensity and post-punk grit.',
         links: [
           { label: 'Bandcamp', href: 'https://transactions.bandcamp.com/album/vilnius-full-of-space' },
+          { label: 'YouTube', href: 'https://www.youtube.com/watch?v=Q__N86JgEeI&list=OLAK5uy_mIn2-mUkz8j7dL-RnMR0-6vZFIWdYzUXo' },
+          { label: 'Spotify', href: 'https://open.spotify.com/album/01f79rSWd72N3WXHMtqStx?si=5V9fzBWyQR6HIS4S9HevfA' },
         ],
       },
       {
@@ -271,9 +285,10 @@ const projects = [
         type: 'single',
         image: labasRytasCover,
         text:
-          'A standalone release from the same period, sitting close to the band’s early sound and surrounding material.',
+          'A cover of an old Lithuanian pop song by Biplan.',
         links: [
           { label: 'Bandcamp', href: 'https://transactions.bandcamp.com/album/labas-rytas' },
+          { label: 'YouTube', href: 'https://www.youtube.com/watch?v=ZttCYEjpjGA' },
         ],
       },
     ],
@@ -290,13 +305,13 @@ const projects = [
     navTitle: 'estakada99',
     title: 'estakada99',
     years: '2025–present',
-    tags: ['independent online radio station', 'Vilnius', 'community radio'],
+    tags: ['community', 'independent', 'online radio station'],
     summary:
       'Independent online radio station established in Vilnius in 2025, broadcasting from studios, homes, and venues across the city and beyond.',
     hero: estakadaProfile,
     intro: [
       'estakada99 is an independent online radio station established in Vilnius in 2025, broadcasting from studios, homes, and venues across the city and beyond.',
-      'Dominykas is a co-founder of the station and makes two shows there that move between live process, conversation, and atmosphere.',
+      'Dominykas is a co-founder of the station and makes two shows there.',
     ],
     links: [
       { label: 'Website', href: 'https://www.e99.live' },
